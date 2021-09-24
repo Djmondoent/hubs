@@ -25,7 +25,7 @@ function applySettings(audio, settings) {
     audio.panner.coneOuterAngle = settings.coneOuterAngle;
     audio.panner.coneOuterGain = settings.coneOuterGain;
   }
-  audio.gain.gain.setTargetAtTime(settings.gain, audio.context.currentTime, 0.1);
+  audio.gain.gain.setTargetAtTime(settings.gain, audio.context.currentTime, 0.01);
 }
 
 export function getCurrentAudioSettings(el) {
